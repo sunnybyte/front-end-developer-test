@@ -4,7 +4,11 @@ Hello prospective team member!  We would like to see your HTML/CSS chops.  We ha
  
  Bonus points for interactive components. 
  
- Some optional components can be: A hamburger menu for mobile devices, A carousel for background images on the hero section, or an image carousel on one of the blog posts.
+ Some optional components can be:   
+ A hamburger menu for mobile devices  
+ A carousel for background images on the hero section  
+ or  
+ An image carousel on one of the blog posts.
  
  We would like to see SEO friendly markup, and file sizes that have site performance in mind.
  
