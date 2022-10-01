@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Front-End Developer Test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+        <link rel="stylesheet" href="../dist/output.css">
+    </head>
+    <body>
+        <header class="bg-primary">
+            <!-- Nav Bar -->
+            <nav class="relative container mx-auto p-6">
+                <!-- Flex Container -->
+                <div class="flex items-center justify-between">
+                    <!-- Logo -->
+                    <div>
+                        <a href="#">
+                            <img src="./img/logo-white.svg" alt="logo" width="150" height="35">
+                        </a>
+                    </div>
+                    <!-- Menu Items -->
+                    <div class="hidden md:flex space-x-12 uppercase text-xs tracking-wider">
+                        <a href="#" class="text-white active-link link">Home</a>
+                        <a href="#" class="text-white link">About</a>
+                        <a href="#" class="text-white link">Portfolio</a>
+                        <a href="#" class="text-white link">Team</a>
+                        <a href="#" class="text-white link">Blog</a>
+                        <a href="#" class="text-white link">Contact</a>
+                    </div>
+
+                    <!-- Hamburger Icon -->
+                    <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu -->
+                <div class="md:hidden">
+                    <div id="menu" class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 text-xs tracking-wider uppercase bg-darkerPrimary text-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                        <a href="#" class="">Home</a>
+                        <a href="#" class="">About</a>
+                        <a href="#" class="">Portfolio</a>
+                        <a href="#" class="">Team</a>
+                        <a href="#" class="">Blog</a>
+                        <a href="#" class="">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section id="hero" class="flex items-center bg-hero bg-no-repeat bg-cover md:h-700">
+            <!-- Container -->
+            <div class="container py-20 px-0 mx-auto md:p-6">
+                <div class="md:w-2/3">
+                    <h1 class="font-semibold text-white uppercase">
+                        <div class="text-md text-center md:text-xl md:text-left">Grab your copy of</div>
+                        <div class="text-4xl text-center md:text-7xl md:text-left">The <span class="text-secondary">Premium</span> Quality PSD Template For <span class="text-secondary">free</span></div>
+                    </h1>
+                    <div class="flex justify-center md:justify-start">
+                        <a href="#" class="bg-white/10 text-white uppercase mt-12 px-24 py-6 rounded ease-in duration-300 hover:bg-primary">Download <i class="fa-sharp fa-solid fa-download ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="pt-10 md:pt-20 pb-20">
+            <!-- Container -->
+            <div class="container p-6 mx-auto">
+                <!-- Section Header -->
+                <div class="mb-10">
+                    <h2 class="text-2xl text-secondary font-semibold uppercase text-center mb-6">Services We Provide</h2>
+                    <p class="text-black text-center mx-auto md:w-2/3">Volutpat wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo 
+                        consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu 
+                        feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent  </p>
+                </div>
+                <!-- Flex Container -->
+                <div class="flex flex-col md:flex-row md:space-x-6">
+                    <!-- Service 1 -->
+                    <div class="flex flex-col items-center p-6 space-y-6 md:w-1/3">
+                        <img src="./img/icon-consultancy.svg" alt="users icon" width="35" height="35">
+                        <h3 class="text-lg font-semibold uppercase text-primary">Consultancy</h3>
+                        <p class="text-sm text-center text-lightGray">Claritas est etiam processus dynaicus qui sequitur mutationem consuetudium lectorum. Mirum est notare quam </p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="flex flex-col items-center p-6 space-y-6 md:w-1/3">
+                        <img src="./img/icon-marketing.svg" alt="marketing icon" width="35" height="35">
+                        <h3 class="text-lg font-semibold uppercase text-primary">Marketing</h3>
+                        <p class="text-sm text-center text-lightGray">Claritas est etiam processus dynaicus qui sequitur mutationem consuetudium lectorum. Mirum est notare quam </p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="flex flex-col items-center p-6 space-y-6 md:w-1/3">
+                        <img src="./img/icon-research.svg" alt="research icon" width="35" height="35">
+                        <h3 class="text-lg font-semibold uppercase text-primary">Research</h3>
+                        <p class="text-sm text-center text-lightGray">Claritas est etiam processus dynaicus qui sequitur mutationem consuetudium lectorum. Mirum est notare quam </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="pb-10 md:pb-20">
+            <!-- Container -->
+            <div class="container p-6 mx-auto">
+                <!-- Section Header -->
+                <div class="mb-10">
+                    <h2 class="text-4xl text-secondary font-semibold uppercase text-center mb-6">Our Blog</h2>
+                    <p class="text-black text-center mx-auto md:w-2/3">Nam liber tempor cum soluta nobis eleifend option<br> congue nihil imperdiet doming id quod mazim 
+                    </p>
+                </div>
+                <!-- Blog 1 -->
+                <div class="flex flex-col mx-auto mb-10 md:mb-20 md:w-4/5 md:flex-row md:space-x-12">
+                    <!-- Blog Thumbnail -->
+                    <div class="md:w-1/2 mb-5 md:mb-0">
+                        <a href="#">
+                            <img src="./img/thumbnail.jpg" alt="camera" class="ease-in duration-300 hover:opacity-90">
+                        </a>
+                    </div>
+                    <!-- Blog Excerpt -->
+                    <div class="text-left md:w-1/2">
+                        <h5 class="text-sm text-secondary">10 April 2014</h5>
+                        <h3 class="text-3xl font-medium text-primary mb-6">Typi non habent claritatem insitam</h3>
+                        <p class="text-baseline text-lightGray">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla  facilisis at vero eros et accumsan et iusto odio dignissim qui [...]</p>
+                    </div>
+                </div>
+                <!-- Blog 2 -->
+                <div class="flex flex-col-reverse mx-auto mb-20 md:w-4/5 md:flex-row md:space-x-12">
+                    <!-- Blog Excerpt -->
+                    <div class="text-left md:w-1/2">
+                        <h5 class="text-sm text-secondary">10 April 2014</h5>
+                        <h3 class="text-3xl font-medium text-primary mb-6">Typi non habent claritatem insitam</h3>
+                        <p class="text-baseline text-lightGray">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla  facilisis at vero eros et accumsan et iusto odio dignissim qui [...]</p>
+                    </div>
+                    <!-- Blog Thumbnail -->
+                    <div class="md:w-1/2 mb-5 md:mb-0">
+                        <a href="#">
+                            <img src="./img/thumbnail.jpg" alt="camera" class="ease-in duration-300 hover:opacity-90">
+                        </a>
+                    </div>
+                </div>
+                <!-- Blog 3 -->
+                <div class="flex flex-col mx-auto md:w-4/5 md:flex-row md:space-x-12">
+                    <!-- Blog Thumbnail -->
+                    <div class="md:w-1/2 mb-5 md:mb-0">
+                        <a href="#">
+                            <img src="./img/thumbnail.jpg" alt="camera" class="ease-in duration-300 hover:opacity-90">
+                        </a>
+                    </div>
+                    <!-- Blog Excerpt -->
+                    <div class="text-left md:w-1/2">
+                        <h5 class="text-sm text-secondary">10 April 2014</h5>
+                        <h3 class="text-3xl font-medium text-primary mb-6">Typi non habent claritatem insitam</h3>
+                        <p class="text-baseline text-lightGray">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla  facilisis at vero eros et accumsan et iusto odio dignissim qui [...]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-lightGray/10 py-10 md:py-20">
+            <!-- Container -->
+            <div class="container mx-auto md:w-1/2">
+                <!-- Section Header -->
+                <div class="mb-20">
+                    <h2 class="text-4xl text-secondary font-semibold uppercase text-center mb-6">Contact</h2>
+                </div>
+                <!-- Form -->
+                <form class="w-full">
+                    <!-- Flex Container -->
+                    <div class="flex flex-wrap mb-6">
+                        <div class="w-full md:w-1/2 px-3">
+                            <input class="appearance-none block w-full p-3 bg-transparent border-solid border-t-2 border-primary focus:outline-none" id="" type="text" placeholder="Name*">
+                        </div>
+                        <div class="w-full md:w-1/2 px-3">
+                            <input class="appearance-none block w-full p-3 bg-transparent border-solid border-t-2 border-primary focus:outline-none" id="" type="email" placeholder="Email*">
+                        </div> 
+                        <div class="w-full px-3 mt-5">
+                            <textarea rows="10" class="appearance-none block w-full p-3 bg-transparent border-solid border-t-2 border-b border-primary focus:outline-none" placeholder="Message..."></textarea>
+                        </div>
+                        <div class="flex justify-center w-full px-3 mt-5">
+                            <button class="bg-transparent border-solid border-2 border-primary py-3 px-10 ease-in duration-300 hover:bg-primary hover:text-white" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <!-- Footer Content-->
+            <div class="bg-darkerPrimary/90 py-5 md:py-10">
+                <!-- Container -->
+                <div class="container mx-auto p-6">
+                    <div class="flex flex-col md:flex-row space-x-0 space-y-6 md:space-y-0 md:space-x-6">
+                        <!-- Logo -->
+                        <div class="w-full md:w-1/4">
+                            <img src="./img/logo-secondary.svg" alt="logo" width="150" height="35" class="mb-5">
+                            <p class="text-lightGray mb-5">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore.</p>
+                            <p class="text-lightGray">Eugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta.</p>
+                        </div>
+                        <!-- Recent Posts -->
+                        <div class="w-full md:w-1/4">
+                            <h4 class="text-lighterGray text-xl font-medium uppercase mb-5">Recent Posts</h4>
+                            <ul class="p-0 m-0">
+                                <li class="text-lightGray pb-5 mb-5 border-solid border-b border-darkGray">
+                                    <div class="text-xs text-darkGray">March 30, 2014</div>
+                                    <p class="text-lg font-medium">Duis autem vel eum iriure dolor</p>
+                                </li>
+                                <li class="text-lightGray pb-5 mb-5 border-solid border-b border-darkGray">
+                                    <div class="text-xs text-darkGray">March 30, 2014</div>
+                                    <p class="text-lg font-medium">Duis autem vel eum iriure dolor</p>
+                                </li>
+                                <li class="text-lightGray pb-5 border-solid border-b border-darkGray">
+                                    <div class="text-xs text-darkGray">March 30, 2014</div>
+                                    <p class="text-lg font-medium">Duis autem vel eum iriure dolor</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Twitter Feeds -->
+                        <div class="w-full md:w-1/4">
+                            <h4 class="text-lighterGray text-xl font-medium uppercase mb-5">Twitter Feeds</h4>
+                            <ul class="p-0 m-0">
+                                <li class="text-lightGray pb-5 mb-5 border-solid border-b border-darkGray">
+                                    <div class="text-xs text-darkGray">about 2 days ago <span class="text-lg text-secondary">@kristianplatt</span></div>
+                                    <p class="text-lg font-medium">Good work buddy</p>
+                                </li>
+                                <li class="text-lightGray pb-5 mb-5 border-solid border-b border-darkGray">
+                                    <div class="text-xs text-darkGray">about 2 days ago <span class="text-lg text-secondary">@kristianplatt</span></div>
+                                    <p class="text-lg font-medium">Good work buddy</p>
+                                </li>
+                                <li class="text-lightGray pb-5 mb-5 border-solid border-b border-darkGray">
+                                    <div class="text-xs text-darkGray">about 2 days ago <span class="text-lg text-secondary">@kristianplatt</span></div>
+                                    <p class="text-lg font-medium">Good work buddy</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Our Address -->
+                        <div class="w-full md:w-1/4">
+                            <h4 class="text-lighterGray text-xl font-medium uppercase mb-5">Our Address</h4>
+                            <p class="text-lightGray">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus,luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta</p>
+                            <ul class="p-0 ml-0 mt-10">
+                                <li class="text-lightGray"><i class="fa-sharp fa-solid fa-map-marker-alt mr-2"></i> Moonshine St. 14/05 Light, Jupiter</li>
+                                <li class="text-lightGray"><i class="fa-sharp fa-solid fa-phone-alt mr-2"></i> +00 (123) 456 78 90</li>
+                                <li class="text-lightGray"><i class="fa-sharp fa-solid fa-envelope mr-2"></i> first.last@email.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="bg-darkerPrimary">
+                <div class="container mx-auto py-6">
+                    <p class="text-lightGray text-center">&copy; 2014 Imran Khan All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../src/js/script.js" async defer></script>
+    </body>
+</html>
